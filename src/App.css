@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #1b1d22;
+  padding: 40px 44px 51px 40px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.main-content-wrapper {
+  display: flex;
+  gap: 50px;
+  margin-top: 32px;
+  flex-grow: 1;
+  overflow-y: auto;
+  nav {
+    flex-shrink: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.loading-message {
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: pulse 1.5s infinite;
+}
+
+@media screen and (max-width: 905px) {
+  .app-container {
+    padding: 20px 20px;
+  }
+}

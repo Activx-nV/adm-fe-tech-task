@@ -1,0 +1,12 @@
+.shipment-content-container {
+  border-radius: 30px;
+  background: linear-gradient(124.01deg, #2d3038 0%, rgba(45, 48, 56, 0) 100%);
+  padding: 29px 29px 29px 51px;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 998px) {
+  .shipment-content-container {
+    padding: 20px 15px;
+  }
+}

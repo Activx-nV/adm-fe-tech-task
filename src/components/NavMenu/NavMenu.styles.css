@@ -1,0 +1,85 @@
+.shipment-list-container {
+  .shipment-list__title {
+    color: #979797;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 13px;
+    transition: 1s ease;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .shipment-list {
+    display: flex;
+    flex-direction: column;
+    min-width: 269px;
+    list-style-type: none;
+    color: #979797;
+    padding: 0px;
+    gap: 12px;
+    overflow-y: auto;
+
+    .shipment-list__item {
+      padding: 2px 0px 4px 1px;
+    }
+
+    .shipment-list__item:hover,
+    .shipment-list__item_active {
+      border-radius: 10px;
+      background: linear-gradient(
+        90deg,
+        rgba(45, 48, 56, 0) 22.92%,
+        #2d3038 100%
+      );
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  .shipment-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .shipment-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .shipment-list-container {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+  }
+  .shipment-list-container {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1d22;
+    z-index: 9999;
+    padding: 20px 20px;
+    transition: 0.5s ease;
+
+    .shipment-list__title {
+      margin-top: 29px;
+      margin-bottom: 0px;
+    }
+
+    .mobile-header {
+      display: flex;
+    }
+  }
+  .shipment-list-container.burgerMenuActive {
+    left: 0;
+  }
+}

@@ -1,0 +1,20 @@
+.shipment-content__title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 74px;
+}
+
+.shipment-content__contact-email {
+  color: #979797;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 998px) {
+  .shipment-content__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

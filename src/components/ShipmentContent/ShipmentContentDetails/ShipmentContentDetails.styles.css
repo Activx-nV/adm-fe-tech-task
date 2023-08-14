@@ -1,0 +1,81 @@
+.shipment-details {
+  margin-top: 30px;
+
+  .shipment-details__title {
+    color: #979797;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .shipment-details__input {
+    max-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 11px 11px 11px 20px;
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+
+    overflow-x: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .shipment-details__input:focus-visible {
+    outline: 1px solid #1b1d22;
+  }
+
+  .shipment__quantity-container {
+    margin-top: 30px;
+
+    .shipment__quantity__title {
+      color: #979797;
+      font-size: 34px;
+      line-height: 44px;
+    }
+
+    .shipment__quantity__cargobays {
+      color: #fff;
+      font-size: 56px;
+      line-height: 66px;
+    }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .shipment-details {
+    .shipment-details__input {
+      padding: 6px 6px 6px 19px;
+    }
+    .shipment__quantity-container {
+      .shipment__quantity__title {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      .shipment__quantity__cargobays {
+        font-size: 34px;
+        line-height: 44px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shipment-details {
+    .shipment-details__input {
+      max-width: unset;
+    }
+    .shipment__quantity-container {
+      margin-top: 50px;
+      .shipment__quantity__title {
+        text-align: center;
+      }
+      .shipment__quantity__cargobays {
+        text-align: center;
+      }
+    }
+  }
+}
