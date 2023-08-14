@@ -1,4 +1,4 @@
-# ADM Interactive front-end tech task
+# ADM Interactive front-end tech task by Lauri Kammonen
 
 ## Available Scripts
 
